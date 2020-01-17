@@ -1,0 +1,72 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exemplo Bootstrap</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/select2.4.0.8.full.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <script src="js/popper_1.12.9.min.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5" id="alerta">
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    Digite somente números e de 1 a 5
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">
+                <ul class="list-group mb-2">
+                    <li class="list-group-item list-group-item-secondary">1 - Celta</li>
+                    <li class="list-group-item list-group-item-success">2 - HB20</li>
+                    <li class="list-group-item list-group-item-danger">3 - Ford Ka</li>
+                    <li class="list-group-item list-group-item-warning">4 - Sandero</li>
+                    <li class="list-group-item list-group-item-info">5 - Corolla</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="btn-group mb-2" role="group" aria-label="Grupo de botoes">
+                    <button type="button" class="btn btn-primary" id="btn_MostarCarroEscolhido" data-toggle="collapse"
+                        data-target="#collapseMostrarCarroEscolhido" aria-expanded="false"
+                        aria-controls="collapseMostrarCarroEscolhido">Mostrar carro escolhido</button>
+                    <button type="button" class="btn btn-success" id="btn_HabilitarCarroEscolhido">Habilitar carro
+                        escolhido</button>
+                    <button type="button" class="btn btn-info" id="btn_LimparTudo">Limpar tudo</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="collapse" id="collapseMostrarCarroEscolhido">
+                    <div class="card card-body">
+                        <p id="txtCarroEscolhido"> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        console.clear();
+
+    });
+
+
+</script>
